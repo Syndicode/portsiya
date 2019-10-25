@@ -1,0 +1,12 @@
+$SPACING_STEP: 5;
+$SPACING_MAX_VALUE: 50;
+
+@for $i from 1 through ($SPACING_MAX_VALUE / $SPACING_STEP) {
+  $val: $i * $SPACING_STEP;
+  
+  .u-p_#{$val} { padding: $val + px !important; }
+  .u-pt_#{$val} { padding-top: $val + px !important; }
+  .u-pb_#{$val} { padding-bottom: $val + px !important; }
+  .u-pr_#{$val} { padding-right: $val + px !important; }
+  .u-pl_#{$val} { padding-left: $val + px !important; }
+}
