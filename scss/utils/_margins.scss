@@ -1,0 +1,19 @@
+  
+$SPACING_STEP: 5;
+$SPACING_MAX_VALUE: 50;
+
+@for $i from 1 through ($SPACING_MAX_VALUE / $SPACING_STEP) {
+  $val: $i * $SPACING_STEP;
+
+  // margins
+  .u-mt_#{$val} { margin-top: $val + px !important; }
+  .u-mb_#{$val} { margin-bottom: $val + px !important; }
+  .u-mr_#{$val} { margin-right: $val + px !important; }
+  .u-ml_#{$val} { margin-left: $val + px !important; }
+
+  // negative margins
+  .u-mtn_#{$val} { margin-top: -$val + px !important; }
+  .u-mbn_#{$val} { margin-bottom: -$val + px !important; }
+  .u-mrn_#{$val} { margin-right: -$val + px !important; }
+  .u-mln_#{$val} { margin-left: -$val + px !important; }
+}
