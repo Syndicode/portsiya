@@ -8,7 +8,7 @@ const fs = require("fs");
  */
 function getModifiedTimeMsSync(filepath) {
   const stats = fs.statSync(filepath);
-  return stats.mtime;
+  return stats.mtimeMs;
 }
 
 module.exports = getModifiedTimeMsSync;
