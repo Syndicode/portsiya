@@ -1,1 +1,1 @@
-![Button story](./Button.stories.png)
+![Button story screenshot](./Button.stories.png)
