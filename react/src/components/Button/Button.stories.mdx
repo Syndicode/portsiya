@@ -1,0 +1,74 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import Button from "./Button";
+
+<Meta
+  $pagePath="http://localhost:9009/?path=/docs/ui-button--modes"
+  title="UI|Button"
+  component={Button}
+  decorators={[getStory => <div style={{ width: "400px" }}>{getStory()}</div>]}
+/>
+
+# Button
+
+<Props of={Button} />
+
+## Button modes
+
+By setting `mode` you'll get different colors:
+
+<Preview>
+  <Story name="modes">
+    <Button.Group justify="around">
+      <Button>Default</Button>
+      <Button mode="success">Success</Button>
+      <Button mode="danger">Danger</Button>
+    </Button.Group>
+  </Story>
+</Preview>
+
+## Button variants
+
+Change visual appearance of the `Button` by setting `variant`:
+
+<Preview>
+  <Story name="variants">
+    <div>
+      <Button.Group justify="around">
+        <Button>Default</Button>
+        <Button variant="rounded">Rounded</Button>
+        <Button variant="outline">Outline</Button>
+        <Button variant="outline-rounded">Outline Rounded</Button>
+      </Button.Group>
+    </div>
+  </Story>
+</Preview>
+
+## Button sizes
+
+<Preview>
+  <Story name="sizes">
+    <>
+      <Button.Group justify="around">
+        <Button size="xs">Tiny</Button>
+        <Button size="sm">Small</Button>
+        <Button size="md">Medium</Button>
+        <Button size="lg">Large</Button>
+      </Button.Group>
+      <div style={{ marginTop: 10 }} />
+      <Button.Group justify="around">
+        <Button size="xs" variant="rounded">
+          Tiny
+        </Button>
+        <Button size="sm" variant="rounded">
+          Small
+        </Button>
+        <Button size="md" variant="rounded">
+          Medium
+        </Button>
+        <Button size="lg" variant="rounded">
+          Large
+        </Button>
+      </Button.Group>
+    </>
+  </Story>
+</Preview>

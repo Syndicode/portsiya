@@ -1,0 +1,81 @@
+$CLR_DEFAULT: #8cabbe;
+$CLR_SUCCESS: #49ecc3;
+$CLR_DANGER: #ea8c91;
+
+.button {
+  appearance: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 3px;
+  border: 1px solid;
+  color: #fff;
+
+  &,
+  &:focus {
+    outline: none;
+  }
+
+  &.--disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  &.--mode-default {
+    background-color: $CLR_DEFAULT;
+    border-color: $CLR_DEFAULT;
+  }
+
+  &.--mode-success {
+    background-color: $CLR_SUCCESS;
+    border-color: $CLR_SUCCESS;
+  }
+
+  &.--mode-danger {
+    background-color: $CLR_DANGER;
+    border-color: $CLR_DANGER;
+  }
+
+  &.--size-xs {
+    padding: 2px 7px;
+  }
+
+  &.--size-sm {
+    padding: 4px 10px;
+  }
+
+  &.--size-md {
+    padding: 6px 15px;
+  }
+
+  &.--size-lg {
+    padding: 10px 20px;
+  }
+
+  &.--variant-default {
+    color: #fff;
+  }
+
+  &.--variant-rounded,
+  &.--variant-rounded-outline,
+  &.--variant-outline-rounded {
+    border-radius: 100px;
+  }
+
+  &.--variant-outline,
+  &.--variant-rounded-outline,
+  &.--variant-outline-rounded {
+    background-color: transparent;
+
+    &.--mode-default {
+      color: $CLR_DEFAULT;
+    }
+
+    &.--mode-success {
+      color: $CLR_SUCCESS;
+    }
+
+    &.--mode-danger {
+      color: $CLR_DANGER;
+    }
+  }
+}
