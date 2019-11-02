@@ -1,0 +1,51 @@
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  & > button {
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  &.--margins-5 > button {
+    margin: 0 5px;
+  }
+  &.--margins-10 > button {
+    margin: 0 5px;
+  }
+  &.--margins-15 > button {
+    margin: 0 15px;
+  }
+  &.--margins-20 > button {
+    margin: 0 20px;
+  }
+  &.--margins-25 > button {
+    margin: 0 25px;
+  }
+
+  &.--justify-center {
+    justify-content: center;
+  }
+
+  &.--justify-start {
+    justify-content: flex-start;
+  }
+
+  &.--justify-end {
+    justify-content: flex-end;
+  }
+
+  &.--justify-between {
+    justify-content: space-between;
+  }
+
+  &.--justify-around {
+    justify-content: space-around;
+  }
+}

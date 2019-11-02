@@ -2,10 +2,9 @@ import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
 import Button from "./Button";
 
 <Meta
-  $pagePath="http://localhost:9009/?path=/docs/ui-button--modes"
+  $pagePath="http://localhost:9010/?path=/docs/ui-button--modes"
   title="UI|Button"
   component={Button}
-  decorators={[getStory => <div style={{ width: "400px" }}>{getStory()}</div>]}
 />
 
 # Button
@@ -18,13 +17,11 @@ By setting `mode` you'll get different colors:
 
 <Preview>
   <Story name="modes">
-    <>
-      <Button.Group justify="around">
-        <Button>Default</Button>
-        <Button mode="success">Success</Button>
-        <Button mode="danger">Danger</Button>
-      </Button.Group>
-    </>
+    <Button.Group justify="center">
+      <Button>Default</Button>
+      <Button mode="success">Success</Button>
+      <Button mode="danger">Danger</Button>
+    </Button.Group>
   </Story>
 </Preview>
 
@@ -34,14 +31,12 @@ Change visual appearance of the `Button` by setting `variant`:
 
 <Preview>
   <Story name="variants">
-    <>
-      <Button.Group justify="around">
-        <Button>Default</Button>
-        <Button variant="rounded">Rounded</Button>
-        <Button variant="outline">Outline</Button>
-        <Button variant="outline-rounded">Outline Rounded</Button>
-      </Button.Group>
-    </>
+    <Button.Group justify="center">
+      <Button>Default</Button>
+      <Button variant="rounded">Rounded</Button>
+      <Button variant="outline">Outline</Button>
+      <Button variant="outline-rounded">Outline Rounded</Button>
+    </Button.Group>
   </Story>
 </Preview>
 
@@ -50,14 +45,14 @@ Change visual appearance of the `Button` by setting `variant`:
 <Preview>
   <Story name="sizes">
     <>
-      <Button.Group justify="around">
+      <Button.Group justify="center">
         <Button size="xs">Tiny</Button>
         <Button size="sm">Small</Button>
         <Button size="md">Medium</Button>
         <Button size="lg">Large</Button>
       </Button.Group>
       <br />
-      <Button.Group justify="around">
+      <Button.Group justify="center">
         <Button size="xs" variant="rounded">
           Tiny
         </Button>
@@ -70,6 +65,42 @@ Change visual appearance of the `Button` by setting `variant`:
         <Button size="lg" variant="rounded">
           Large
         </Button>
+      </Button.Group>
+    </>
+  </Story>
+</Preview>
+
+# Button.Group
+
+Basic container component which helps with `<Button>` alignments
+
+<Props of={Button.Group} />
+
+## Button.Group justify
+
+<Preview>
+  <Story name="justified">
+    <>
+      <Button.Group justify="start">
+        <Button>One</Button>
+        <Button>Two</Button>
+        <Button>Three</Button>
+      </Button.Group>
+      <br />
+      <hr />
+      <br />
+      <Button.Group justify="center">
+        <Button>Four</Button>
+        <Button>Five</Button>
+        <Button>Six</Button>
+      </Button.Group>
+      <br />
+      <hr />
+      <br />
+      <Button.Group justify="end">
+        <Button>Seven</Button>
+        <Button>Eight</Button>
+        <Button>Nine</Button>
       </Button.Group>
     </>
   </Story>
