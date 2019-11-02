@@ -1,0 +1,36 @@
+$CLR_PRIMARY: tomato;
+
+.container {
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerAbsCentered {
+  padding: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  z-index: 10;
+}
+
+.spinner {
+  border: 5px solid;
+  border-radius: 50%;
+  animation: spin 0.7s infinite forwards;
+  border-color: transparentize($CLR_PRIMARY, 0.8);
+  border-top-color: $CLR_PRIMARY;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
