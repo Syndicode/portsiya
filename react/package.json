@@ -7,24 +7,28 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "storybook:start": "start-storybook -p 9009",
-    "storybook:stories_to_png": "node ./scripts/stories-screenshot"
+    "storybook:stories_to_png": "node ./scripts/stories-screenshot",
+    "storybook:start": "start-storybook -p 9009 -s public",
+    "storybook:build": "build-storybook -s public"
   },
   "dependencies": {
+    "@types/jest": "24.0.21",
+    "@types/node": "12.12.5",
+    "@types/react": "16.9.11",
+    "@types/react-dom": "16.9.3",
     "node-sass": "^4.13.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
-    "react-scripts": "3.2.0"
+    "react-scripts": "3.2.0",
+    "typescript": "3.6.4"
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^5.2.5",
-    "@storybook/addon-docs": "^5.2.5",
-    "@storybook/addon-info": "^5.2.5",
-    "@storybook/addon-links": "^5.2.5",
-    "@storybook/addon-options": "^5.2.5",
-    "@storybook/addon-storysource": "^5.2.5",
-    "@storybook/addons": "^5.2.5",
-    "@storybook/react": "^5.2.5",
+    "@storybook/addon-actions": "^5.3.0-alpha.37",
+    "@storybook/addon-docs": "^5.3.0-alpha.37",
+    "@storybook/addon-links": "^5.3.0-alpha.37",
+    "@storybook/addons": "^5.3.0-alpha.37",
+    "@storybook/preset-create-react-app": "^1.2.0",
+    "@storybook/react": "^5.3.0-alpha.37",
     "babel-loader": "^8.0.6",
     "puppeteer": "^2.0.0",
     "react-is": "^16.11.0"
