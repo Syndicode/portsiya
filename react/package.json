@@ -9,7 +9,8 @@
     "eject": "react-scripts eject",
     "storybook:stories_to_png": "node ./scripts/stories-screenshot",
     "storybook:start": "start-storybook -p 9009 -s public",
-    "storybook:build": "build-storybook -s public"
+    "storybook:build": "build-storybook -s public",
+    "component:create": "node ./scripts/components-scaffold component:create"
   },
   "dependencies": {
     "@types/jest": "24.0.21",
