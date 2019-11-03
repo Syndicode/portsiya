@@ -1,0 +1,31 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import Spinner from "./Spinner";
+
+<Meta
+  $pagePath="http://localhost:9010/?path=/docs/ui-spinner--sizes"
+  title="UI|Spinner"
+  component={Spinner}
+/>
+
+# Spinner
+
+<Props of={Spinner} />
+
+## Spinner size
+
+<Preview>
+  <Story name="sizes">
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center"
+      }}
+    >
+      <Spinner size={10} />
+      <Spinner size={20} />
+      <Spinner size={30} />
+      <Spinner size={40} />
+    </div>
+  </Story>
+</Preview>
