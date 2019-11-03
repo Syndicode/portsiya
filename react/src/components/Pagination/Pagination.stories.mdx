@@ -1,0 +1,18 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import Pagination from "./Pagination";
+
+<Meta
+  $pagePath="http://localhost:9010/?path=/docs/ui-pagination--basic"
+  title="UI|Pagination"
+  component={Pagination}
+/>
+
+# Pagination
+
+<Props of={Pagination} />
+
+<Preview>
+  <Story name="basic">
+    <Pagination itemsCount={18} itemsPerPage={4} />
+  </Story>
+</Preview>

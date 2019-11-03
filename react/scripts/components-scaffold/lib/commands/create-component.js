@@ -1,6 +1,5 @@
 const fs = require("fs");
 const path = require("path");
-const { Transform } = require("stream");
 const glob = require("glob");
 const config = require("../config");
 const { Logger, isDirectorySync } = require("../utils");

@@ -1,0 +1,37 @@
+$COLOR: green;
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+
+  li {
+    font-size: 14px;
+    color: $COLOR;
+    padding: 3px 7px;
+    border-radius: 2px;
+    background-color: transparent;
+    transition: all 0.2s;
+    cursor: pointer;
+
+    &.active {
+      background-color: $COLOR;
+      color: #fff;
+    }
+
+    &.disabled {
+      opacity: 0.3;
+      pointer-events: none;
+    }
+
+    &.padder {
+      padding: 0;
+      margin: 0 10px;
+    }
+
+    &:hover {
+      background-color: transparentize($COLOR, 0.8);
+    }
+  }
+}
