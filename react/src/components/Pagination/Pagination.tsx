@@ -1,6 +1,6 @@
 import React from "react";
 import { classNames } from "utils/style";
-import { createPager, sanitizeCurrentPage } from "./helpers";
+import { createPager, sanitizeCurrentPage } from "./Pagination.helpers";
 import styles from "./Pagination.module.scss";
 
 type PaginationProps = {
@@ -13,7 +13,6 @@ type PaginationProps = {
 const Pagination = (props: PaginationProps) => {
   const [currentPage, setCurrentPage] = React.useState(props.currentPage);
   const totalPages = Math.ceil(props.itemsCount / props.itemsPerPage);
-  console.log("totalPages", totalPages);
   const perPage = props.itemsPerPage;
 
   const handlePageChange = (page: number) => {
