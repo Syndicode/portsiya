@@ -29,22 +29,22 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### `storybook:start`
 
-Runs `start-storybook -p 9009 -s public`
-Spins out [Storybook]() server on port `9009`
+Runs `start-storybook -p 9009 -s public`<br />
+Spins out [Storybook]() server on port `9009`<br />
 
 ### `storybook:build`
 
-Runs `build-storybook -s public`
+Runs `build-storybook -s public`<br />
 
 ### `storybook:stories_to_png`
 
-Runs `node ./scripts/stories-screenshot`.
-Takes a screenshot of a componnents `.mdx` story and puts it in the components directory.
+Runs `node ./scripts/stories-screenshot`.<br />
+Takes a screenshot of a componnents `.mdx` story and puts it in the components directory.<br />
 
 ### `component:create`
 
-Runs `node ./scripts/components-scaffold component:create`.
-Scaffolds a component folder using this [template](https://github.com/Syndicode/portsiya/tree/master/react/scripts/components-scaffold/template).
+Runs `node ./scripts/components-scaffold component:create`.<br />
+Scaffolds a component folder using this [template](https://github.com/Syndicode/portsiya/tree/master/react/scripts/components-scaffold/template).<br />
 
 #### Usage:
 
@@ -52,8 +52,8 @@ Scaffolds a component folder using this [template](https://github.com/Syndicode/
 yarn component:create Text --path ./some/path
 ```
 
-Puts newly created `Text` folder into `./some/path`.
-If no `--path` provided will use `./src/components` or `./components` by default
+Puts newly created `Text` folder into `./some/path`.<br />
+If no `--path` provided will use `./src/components` or `./components` by default.<br />
 
 ### `component:pull`
 
