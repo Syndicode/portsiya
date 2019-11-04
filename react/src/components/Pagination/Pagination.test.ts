@@ -1,4 +1,4 @@
-import { createPager } from "./helpers";
+import { createPager } from "./Pagination.helpers";
 
 /*
 pages example for { perPage: 10, totalPages: 15 } and variable currentPage
